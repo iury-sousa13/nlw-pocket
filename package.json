@@ -1,0 +1,12 @@
+{
+  "name": "nlw-pocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3"
+  }
+}
