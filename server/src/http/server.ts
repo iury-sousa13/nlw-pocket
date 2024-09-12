@@ -1,9 +1,22 @@
 import fastify from 'fastify'
+import fastifyCors from '@fastify/cors'
 import { createGoalRoute } from './routes/create-goal'
+import { serializerCompiler, validatorCompiler, type ZodTypeProvider } from 'fastify-type-provider-zod'
+import { createGoalCompletionRoute } from './routes/create-goal-completion'
+import { getWeekSummaryRoute } from './routes/get-week-summary'
+import { getWeekPendingGoalsRoute } from './routes/get-week-pending-goals'
 
-const app = fastify({ logger: true })
+const app = fastify({ logger: true }).withTypeProvider<ZodTypeProvider>()
+
+app.register(fastifyCors, { origin: '*' })
+
+app.setValidatorCompiler(validatorCompiler)
+app.setSerializerCompiler(serializerCompiler)
 
 app.register(createGoalRoute)
+app.register(createGoalCompletionRoute)
+app.register(getWeekSummaryRoute)
+app.register(getWeekPendingGoalsRoute)
 
 app
   .listen({
