@@ -20,6 +20,6 @@ app.register(getWeekPendingGoalsRoute)
 
 app
   .listen({
-    port: 3001,
+    port: 3333,
   })
   .then(() => console.log('HTTP server in running!'))

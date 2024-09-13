@@ -5,10 +5,12 @@ specifiers:
   '@radix-ui/react-dialog': ^1.1.1
   '@radix-ui/react-progress': ^1.1.0
   '@radix-ui/react-radio-group': ^1.2.0
+  '@tanstack/react-query': ^5.56.2
   '@types/react': ^18.3.3
   '@types/react-dom': ^18.3.0
   '@vitejs/plugin-react': ^4.3.1
   autoprefixer: ^10.4.20
+  dayjs: ^1.11.13
   lucide-react: ^0.441.0
   postcss: ^8.4.45
   react: ^18.3.1
@@ -27,6 +29,8 @@ dependencies:
   '@radix-ui/react-dialog': 1.1.1_szuh4vtdsit4ubso7uq3ljvnnm
   '@radix-ui/react-progress': 1.1.0_szuh4vtdsit4ubso7uq3ljvnnm
   '@radix-ui/react-radio-group': 1.2.0_szuh4vtdsit4ubso7uq3ljvnnm
+  '@tanstack/react-query': 5.56.2_react@18.3.1
+  dayjs: 1.11.13
   lucide-react: 0.441.0_react@18.3.1
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
@@ -1061,6 +1065,19 @@ packages:
     dev: true
     optional: true
 
+  /@tanstack/query-core/5.56.2:
+    resolution: {integrity: sha512-gor0RI3/R5rVV3gXfddh1MM+hgl0Z4G7tj6Xxpq6p2I03NGPaJ8dITY9Gz05zYYb/EJq9vPas/T4wn9EaDPd4Q==}
+    dev: false
+
+  /@tanstack/react-query/5.56.2_react@18.3.1:
+    resolution: {integrity: sha512-SR0GzHVo6yzhN72pnRhkEFRAHMsUo5ZPzAxfTMvUxFIDVS6W9LYUp6nXW3fcHVdg0ZJl8opSH85jqahvm6DSVg==}
+    peerDependencies:
+      react: ^18 || ^19
+    dependencies:
+      '@tanstack/query-core': 5.56.2
+      react: 18.3.1
+    dev: false
+
   /@types/babel__core/7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
     dependencies:
@@ -1287,6 +1304,10 @@ packages:
 
   /csstype/3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  /dayjs/1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
+    dev: false
 
   /debug/4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
