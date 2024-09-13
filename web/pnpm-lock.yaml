@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@hookform/resolvers': ^3.9.0
   '@radix-ui/react-dialog': ^1.1.1
   '@radix-ui/react-progress': ^1.1.0
   '@radix-ui/react-radio-group': ^1.2.0
@@ -12,21 +13,28 @@ specifiers:
   postcss: ^8.4.45
   react: ^18.3.1
   react-dom: ^18.3.1
+  react-hook-form: ^7.53.0
+  sonner: ^1.5.0
   tailwind-merge: ^2.5.2
   tailwind-variants: ^0.2.1
   tailwindcss: ^3.4.11
   typescript: ^5.5.3
   vite: ^5.4.1
+  zod: ^3.23.8
 
 dependencies:
+  '@hookform/resolvers': 3.9.0_react-hook-form@7.53.0
   '@radix-ui/react-dialog': 1.1.1_szuh4vtdsit4ubso7uq3ljvnnm
   '@radix-ui/react-progress': 1.1.0_szuh4vtdsit4ubso7uq3ljvnnm
   '@radix-ui/react-radio-group': 1.2.0_szuh4vtdsit4ubso7uq3ljvnnm
   lucide-react: 0.441.0_react@18.3.1
   react: 18.3.1
   react-dom: 18.3.1_react@18.3.1
+  react-hook-form: 7.53.0_react@18.3.1
+  sonner: 1.5.0_nnrd3gsncyragczmpvfhocinkq
   tailwind-merge: 2.5.2
   tailwind-variants: 0.2.1_tailwindcss@3.4.11
+  zod: 3.23.8
 
 devDependencies:
   '@types/react': 18.3.5
@@ -449,6 +457,14 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@hookform/resolvers/3.9.0_react-hook-form@7.53.0:
+    resolution: {integrity: sha512-bU0Gr4EepJ/EQsH/IwEzYLsT/PEj5C0ynLQ4m+GSHS+xKH4TfSelhluTgOaoc4kA5s7eCsQbM4wvZLzELmWzUg==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+    dependencies:
+      react-hook-form: 7.53.0_react@18.3.1
+    dev: false
 
   /@isaacs/cliui/8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1705,6 +1721,15 @@ packages:
       scheduler: 0.23.2
     dev: false
 
+  /react-hook-form/7.53.0_react@18.3.1:
+    resolution: {integrity: sha512-M1n3HhqCww6S2hxLxciEXy2oISPnAzxY7gvwVPrtlczTM/1dDadXgUxDpHMrMTblDOcm/AXtXxHwZ3jpg1mqKQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+    dependencies:
+      react: 18.3.1
+    dev: false
+
   /react-refresh/0.14.2:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
@@ -1847,6 +1872,16 @@ packages:
   /signal-exit/4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  /sonner/1.5.0_nnrd3gsncyragczmpvfhocinkq:
+    resolution: {integrity: sha512-FBjhG/gnnbN6FY0jaNnqZOMmB73R+5IiyYAw8yBj7L54ER7HB3fOSE5OFiQiE2iXWxeXKvg6fIP4LtVppHEdJA==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1_react@18.3.1
+    dev: false
 
   /source-map-js/1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -2097,3 +2132,7 @@ packages:
     resolution: {integrity: sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q==}
     engines: {node: '>= 14'}
     hasBin: true
+
+  /zod/3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+    dev: false

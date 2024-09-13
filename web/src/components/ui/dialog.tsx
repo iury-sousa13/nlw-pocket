@@ -17,12 +17,7 @@ export function DialogPortal(props: DialogPrimitive.DialogPortalProps) {
 }
 
 export function DialogOverlay(props: DialogPrimitive.DialogOverlayProps) {
-  return (
-    <DialogPrimitive.DialogOverlay
-      {...props}
-      className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm"
-    />
-  )
+  return <DialogPrimitive.DialogOverlay {...props} className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm" />
 }
 
 export function DialogContent(props: DialogPrimitive.DialogContentProps) {
@@ -39,18 +34,9 @@ export function DialogContent(props: DialogPrimitive.DialogContentProps) {
 }
 
 export function DialogTitle(props: DialogPrimitive.DialogTitleProps) {
-  return (
-    <DialogPrimitive.DialogTitle {...props} className="text-lg font-semibold" />
-  )
+  return <DialogPrimitive.DialogTitle {...props} className="text-lg font-semibold" />
 }
 
-export function DialogDescription(
-  props: DialogPrimitive.DialogDescriptionProps
-) {
-  return (
-    <DialogPrimitive.DialogDescription
-      {...props}
-      className="text-zinc-400 text-sm leading-relaxed"
-    />
-  )
+export function DialogDescription(props: DialogPrimitive.DialogDescriptionProps) {
+  return <DialogPrimitive.DialogDescription {...props} className="text-zinc-400 text-sm leading-relaxed" />
 }
